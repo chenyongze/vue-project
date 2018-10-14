@@ -2,7 +2,8 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
-    <tabbar></tabbar>
+    <!-- <router-view v-wechat-title="$route.meta.title"></router-view>  -->
+    <tabbar/>
   </div>
 </template>
 

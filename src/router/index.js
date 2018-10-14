@@ -17,17 +17,26 @@ export default new Router({
     {
       path: '/about',
       // name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/About')
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/About'),
+       meta: {
+        title: 'about'
+      }
     },
     {
       path: '/center',
       // name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/Center')
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/Center'),
+      meta: {
+        title: 'center'
+      }
     },
     {
       path: '/imageList',
       // name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/Images')
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/Images'),
+       meta: {
+        title: 'imageList'
+      }
     },
   ]
 })
