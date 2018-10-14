@@ -28,14 +28,15 @@ export default {
   methods:{
       getImages:function(){
           console.log('click get')
-          //发送get请求
-          this.$http.get(apiHost+'/resource/api.image/listx').then(function(res){
-              console.log(res.body);
-              this.list = res.body.data;
-
-          },function(){
-              alert('请求失败处理');   //失败处理
-          });
+        var url = apiHost+'/resource/api.image/listx';
+        this.axios.get(url)
+          .then(res => {
+            // 成功回调
+            console.log(res);
+            this.list = res.data.data;
+          }, res => {
+            // 错误回调
+          })
       }
   },
 }
