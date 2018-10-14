@@ -14,6 +14,7 @@
 <script>
 
 var apiHost = process.env.API_BASE;
+
 export default {
   name: 'HelloWorld',
   data () {
