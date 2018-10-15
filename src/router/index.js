@@ -53,5 +53,12 @@ export default new Router({
         title: 'b'
       }
     },
+    {
+      path: '/banner',
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/Banner'),
+      meta: {
+        title: 'banner'
+      }
+    },
   ]
 })

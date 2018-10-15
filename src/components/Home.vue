@@ -1,14 +1,44 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-     <!-- <span v-for="n in 10">{{ n }} </span> -->
-    <!-- <input type="button" @click="get()" value="按钮"> -->
-    <div class="image-list">
-      <li v-for="item in list"> <img :src="item.cover" width="100%" height="100%"></li>
+  <div class="">
+
+    <div id= "banner" class="carousel slide banner-nav" data-ride="carousel">
+      <!-- 指示符 -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+        </div>
+      </div>
+
+      <!-- 左右切换按钮 -->
+      <a class="carousel-control-prev" href="#banner" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#banner" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
-    <span class="infinite-scroll-text">{{tips}}</span>
+
+    <div class="container">
+        <div class="col-sm-2 image-list" v-for="item in list">
+          <img :src="item.cover" class="rounded" width="100%" height="100%">
+        </div>
+    </div>
 
   </div>
+
  <!-- <span v-for="n in 10">{{ n }} </span> -->
 </template>
 
@@ -92,12 +122,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .image-list li{
+  .image-list{
     float: left;
     width: 45%;
-    margin: 0 5px;
-    /*padding: 0 1px;*/
-    border: 2px solid gray;
+    margin: 0 0 0 17px;
+    padding: 0 0 0 1px;
+    /*border: 2px solid gray;*/
+  }
+  .banner-nav {
+    margin: 0 0 5px 0;
+  }
+  .banner-nav img {
+    width: 100%;
+    height: 200px;
+
   }
   .infinite-scroll-text{
     float: left;

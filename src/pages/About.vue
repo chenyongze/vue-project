@@ -1,50 +1,16 @@
 <template>
-	<div>
-  <table>
-    <tr>
-      <th>firstName</th>
-      <th>lastName</th>
-    </tr>
-    <tr>
-      <td>Y</td>
-      <td>😜</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>😡</td>
-    </tr>
-  </table>
-
-    <div class="testDiv">
-      fdsafadsfads
-    </div>
-    <div class="testDiv">
-      fdsfasdf
-    </div>
-    <div class="testDiv">
-      fdsfasdf
-    </div>
-    <div class="testDiv">
-      fdsfasdf
-    </div>
-    <div class="testDiv">
-      fdsfasdf
-    </div>
-    <div class="testDiv">
-      fdsfasdf
-    </div>
-    <div class="testDiv">
-      fdsfasdf
-    </div>
-
-    <ul class="pagination">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
-
+  <div class="container">
+    <h2>边框颜色</h2>
+    <p>Bootstrap4 提供了一些类来设置边框颜色:</p>
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+    <span class="border border-white"></span>
   </div>
 </template>
 
