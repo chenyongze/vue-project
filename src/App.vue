@@ -3,6 +3,7 @@
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
     <!-- <router-view v-wechat-title="$route.meta.title"></router-view>  -->
+    <!--tabBar -->
     <tabbar/>
   </div>
 </template>
@@ -15,9 +16,11 @@ export default {
     tabbar
   },
 }
+
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

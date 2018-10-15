@@ -1,8 +1,8 @@
 <!-- Tab Bar list -->
 <template lang="html">
-  <div class="footer">
+  <ul class="footer">
    <li v-for="item in list"><a :href="item.url">{{item.name}}</a></li>
-  </div>
+  </ul>
 </template>
 
 <script>
@@ -21,11 +21,36 @@ export default {
 </script>
 
 <style scoped>
-  .footer {
-    height: 50px;
-    margin-bottom: 30px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
-  .footer li {
-    color: green;
+  ul.footer {
+    border: 1px solid #e7e7e7;
+    bottom: 0;
+    padding: 0;
+    position:fixed;
+    overflow: hidden;
+    font-size: 1.4em;
+    width: 100%;
+    background:#f3f3f3;
+    list-style-type: none;
+  }
+  ul.footer li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+  }
+  ul.footer a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul.footer a:active{
+    background-color: #4CAF50;
   }
 </style>

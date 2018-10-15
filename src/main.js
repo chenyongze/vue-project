@@ -7,6 +7,11 @@ import router from './router'
 import axios from 'axios'
 Vue.prototype.axios = axios
 
+import $ from 'jquery'
+// import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
 Vue.config.productionTip = false
 
 // 使用vue-router设置每个页面的title

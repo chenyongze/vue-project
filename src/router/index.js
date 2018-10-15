@@ -38,5 +38,20 @@ export default new Router({
         title: 'imageList'
       }
     },
+    {
+      path: '/poetry',
+      // name: 'about',
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/Poetry'),
+      meta: {
+        title: 'poetry'
+      }
+    },
+    {
+      path: '/b',
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/B'),
+      meta: {
+        title: 'b'
+      }
+    },
   ]
 })
