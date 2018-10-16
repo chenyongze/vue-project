@@ -2,18 +2,20 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
-    <!-- <router-view v-wechat-title="$route.meta.title"></router-view>  -->
     <!--tabBar -->
     <tabbar/>
+    <footer/>
   </div>
 </template>
 
 <script>
 import tabbar from '@/components/Tabbar.vue'
+import footer from '@/components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    tabbar
+    tabbar,
+    footer
   },
 }
 
@@ -31,6 +33,6 @@ export default {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0;
 }
 </style>

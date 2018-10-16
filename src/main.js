@@ -9,10 +9,15 @@ Vue.prototype.axios = axios
 
 import $ from 'jquery'
 // import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.min.js'
 
 Vue.config.productionTip = false
+
+// 引入组件
+import WeuiVue from 'weui-vue'
+// 引入样式
+import 'weui-vue/weui.css'
 
 // 使用vue-router设置每个页面的title
 router.beforeEach((to, from, next) => {

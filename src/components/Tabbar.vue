@@ -1,8 +1,8 @@
 <!-- Tab Bar list -->
-<template lang="html">
-  <ul class="footer">
-   <li v-for="item in list"><a :href="item.url">{{item.name}}</a></li>
-  </ul>
+<template>
+  <div class="page">
+
+  </div>
 </template>
 
 <script>

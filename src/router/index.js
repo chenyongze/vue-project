@@ -8,6 +8,13 @@ export default new Router({
   routes: [
     {
       path: '/',
+      component: () => import(/* webpackChunkName: "about" */ '@/pages/Index'),
+      meta: {
+        title: '首页入口'
+      }
+    },
+    {
+      path: '/list',
       name: 'home',
       component: home,
       meta: {
@@ -16,49 +23,18 @@ export default new Router({
     },
     {
       path: '/about',
-      // name: 'about',
       component: () => import(/* webpackChunkName: "about" */ '@/pages/About'),
        meta: {
         title: 'about'
       }
     },
     {
-      path: '/center',
-      // name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/Center'),
+      path:'/detail',
+      component:() =>import('@/pages/Detail'),
       meta: {
-        title: 'center'
+        title:"detail",
       }
     },
-    {
-      path: '/imageList',
-      // name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/Images'),
-       meta: {
-        title: 'imageList'
-      }
-    },
-    {
-      path: '/poetry',
-      // name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/Poetry'),
-      meta: {
-        title: 'poetry'
-      }
-    },
-    {
-      path: '/b',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/B'),
-      meta: {
-        title: 'b'
-      }
-    },
-    {
-      path: '/banner',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/Banner'),
-      meta: {
-        title: 'banner'
-      }
-    },
+
   ]
 })
