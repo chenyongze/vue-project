@@ -22,17 +22,17 @@ export default new Router({
       }
     },
     {
-      path: '/about',
-      component: () => import(/* webpackChunkName: "about" */ '@/pages/About'),
-       meta: {
-        title: 'about'
-      }
-    },
-    {
       path:'/detail',
       component:() =>import('@/pages/Detail'),
       meta: {
         title:"detail",
+      }
+    },
+    {
+      path:'/center',
+      component:() =>import('@/pages/Center'),
+      meta: {
+        title:"个人中心",
       }
     },
 

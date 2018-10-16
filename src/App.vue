@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
     <!--tabBar -->
@@ -31,8 +31,5 @@ export default {
   color: #2c3e50;
   margin-top: 2px;
 }
-li {
-  display: inline-block;
-  margin: 0;
-}
+
 </style>
